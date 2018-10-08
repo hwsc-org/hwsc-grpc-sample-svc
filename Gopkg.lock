@@ -2,16 +2,10 @@
 
 
 [[projects]]
-  digest = "1:b00d66edb5f40dbbdcd37292851a61c2644356e37d8fb6517394ffb4b24b1c22"
+  digest = "1:4c0989ca0bcd10799064318923b9bc2db6b4d6338dd75f3f2d86c3511aaaf5cf"
   name = "github.com/golang/protobuf"
   packages = [
     "proto",
-    "protoc-gen-go",
-    "protoc-gen-go/descriptor",
-    "protoc-gen-go/generator",
-    "protoc-gen-go/generator/internal/remap",
-    "protoc-gen-go/grpc",
-    "protoc-gen-go/plugin",
     "ptypes",
     "ptypes/any",
     "ptypes/duration",
@@ -109,13 +103,13 @@
   ]
   pruneopts = "UT"
   revision = "8dea3dc473e90c8179e519d91302d0597c0ca1d1"
-  version = "v1.15.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/golang/protobuf/protoc-gen-go",
+    "github.com/golang/protobuf/proto",
+    "golang.org/x/net/context",
     "google.golang.org/grpc",
   ]
   solver-name = "gps-cdcl"
