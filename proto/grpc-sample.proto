@@ -1,7 +1,0 @@
-syntax="proto3";
-
-package sample;
-
-option go_package="grpc-sample-pb";
-
-service SampleService{}
