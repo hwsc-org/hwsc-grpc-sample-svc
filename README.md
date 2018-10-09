@@ -28,7 +28,7 @@ Sample HWSC service using gRPC in GoLang
 3. Run ``$ go get -u github.com/golang/dep/cmd/dep`` (GoLang Dependency Management)
 4. Run ``$ bash $GOPATH/src/github.com/golang/dep/cmd/dep/install.sh``
 5. Verify dep installation ``$ dep version``
-6. Make a new GitHub repository. (Assuming we are creating a new service repo https://github.com/faraonc/empty-sample)
+6. Make a new GitHub repository (Assuming we are creating a new service repo https://github.com/faraonc/empty-sample)
 7. Run ``$ go get -u github.com/faraonc/empty-sample``
 8. Change Directory ``$ cd $GOPATH/src/github.com/faraonc/empty-sample``
 9. Run the following commands
