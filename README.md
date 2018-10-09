@@ -57,7 +57,7 @@ Sample HWSC service using gRPC in GoLang
       name = "google.golang.org/grpc"
       revision ="8dea3dc473e90c8179e519d91302d0597c0ca1d1"
       ```
-11. Download, extract [protocol buffers 3.6.1](https://github.com/protocolbuffers/protobuf/releases), with [install guide](https://medium.com/@erika_dike/installing-the-protobuf-compiler-on-a-mac-a0d397af46b8)
+11. Download, extract [protocol buffers 3.6.1](https://github.com/protocolbuffers/protobuf/releases), and install (takes a while) [guide](https://medium.com/@erika_dike/installing-the-protobuf-compiler-on-a-mac-a0d397af46b8)
 12. Add the protoc binary to your $PATH (refer to step 2)
 13. Define your proto; [basic guide](https://grpc.io/docs/tutorials/basic/go.html), [REST guide](https://grpc.io/blog/coreos), [example](https://github.com/faraonc/hwsc-grpc-sample/tree/master/proto)
 14. Make a generate protoc script, [example](https://github.com/faraonc/hwsc-grpc-sample/blob/master/generate_proto.sh)
