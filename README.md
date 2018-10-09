@@ -50,18 +50,18 @@ Sample HWSC service using gRPC in GoLang
         }
     
        ```
-11. Add gRPC dependency, ``$ dep ensure -add google.golang.org/grpc``
-12. Modify Gopkg.toml to point to a gRPC specific commit revision
+11. Add constraint "google.golang.org/grpc" Gopkg.toml to point to a gRPC specific commit revision
       ```toml
       [[constraint]]
       name = "google.golang.org/grpc"
       revision ="8dea3dc473e90c8179e519d91302d0597c0ca1d1"
       ```
-11. Download, extract [protocol buffers 3.6.1](https://github.com/protocolbuffers/protobuf/releases), and install (takes a while) [guide](https://medium.com/@erika_dike/installing-the-protobuf-compiler-on-a-mac-a0d397af46b8)
-12. Add the protoc binary to your $PATH (refer to step 2)
-13. Run ``$ go get -u github.com/golang/protobuf/protoc-gen-go``
-14. Define your proto; [basic guide](https://grpc.io/docs/tutorials/basic/go.html), [REST guide](https://grpc.io/blog/coreos), [example](https://github.com/faraonc/hwsc-grpc-sample/tree/master/proto)
-15. Make a generate protoc script, [example](https://github.com/faraonc/hwsc-grpc-sample/blob/master/generate_proto.sh)
-16. Run ``$ dep ensure -v`` from the root folder of the project to populate dependencies in the vendor folder (run as you add external dependencies)
-17. Run your generate protoc script or as needed, [example result](https://github.com/faraonc/hwsc-grpc-sample/blob/master/proto/grpc-sample.pb.go)
-18. TODO Defining a server
+  
+13. Download, extract [protocol buffers 3.6.1](https://github.com/protocolbuffers/protobuf/releases), and install (takes a while) [guide](https://medium.com/@erika_dike/installing-the-protobuf-compiler-on-a-mac-a0d397af46b8)
+14. Add the protoc binary to your $PATH (refer to step 2)
+15. Run ``$ go get -u github.com/golang/protobuf/protoc-gen-go``
+16. Define your proto in [hwsc-api-blocks](https://github.com/faraonc/hwsc-api-blocks) under folder "proto"; [basic guide](https://grpc.io/docs/tutorials/basic/go.html), [REST guide](https://grpc.io/blog/coreos), [example](https://github.com/faraonc/hwsc-api-blocks/tree/master/int/hwsc-grpc-sample/proto)
+17. Modify generate {int,ext} protoc script [hwsc-api-blocks](https://github.com/faraonc/hwsc-api-blocks) , [example](https://github.com/faraonc/hwsc-api-blocks/blob/master/generate_int_proto.sh)
+18. [OPTIONAL] Run ``$ dep ensure -v`` from the root folder of the project to populate dependencies in the vendor folder (run as you add external dependencies)
+19. [OPTIONAL] Run your generate protoc script or as needed, [example result](https://github.com/faraonc/hwsc-api-blocks/tree/master/int/hwsc-grpc-sample/proto)
+20. TODO Defining a server
