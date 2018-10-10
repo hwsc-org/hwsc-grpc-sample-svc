@@ -3,11 +3,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:b8d6acc47bf159c6432948e065fd2aca224fe1872ba0a79a00588240a54ba7ea"
+  digest = "1:3acb7d4987d04f5732c32a564d9fa0e9ee8706b58456ce8ccdf7cfa84a827a5d"
   name = "github.com/faraonc/hwsc-api-blocks"
   packages = ["int/hwsc-grpc-sample-svc/proto"]
   pruneopts = "UT"
-  revision = "d488a9fd4ba7858370b9a0eb0f9e1481e9b47e48"
+  revision = "9b0f6aaf9ecf25202c87b1049a37fe25c921f298"
 
 [[projects]]
   digest = "1:4c0989ca0bcd10799064318923b9bc2db6b4d6338dd75f3f2d86c3511aaaf5cf"
