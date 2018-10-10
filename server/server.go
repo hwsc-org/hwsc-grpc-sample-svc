@@ -3,7 +3,7 @@ package server
 import(
 	"golang.org/x/net/context"
 
-	pb"github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample/proto"
+	pb"github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample-svc/proto"
 )
 
 type Server struct{}

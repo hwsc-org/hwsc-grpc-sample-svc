@@ -6,8 +6,8 @@ import (
 	"log"
 	"net"
 
-	pb"github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample/proto"
-	svr"github.com/faraonc/hwsc-grpc-sample/server"
+	pb"github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample-svc/proto"
+	svr"github.com/faraonc/hwsc-grpc-sample-svc/server"
 )
 
 func main() {
