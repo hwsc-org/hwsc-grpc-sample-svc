@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	fmt.Println("hwsc-grpc-sample Service is running...")
+	fmt.Println("hwsc-grpc-sample-svc is running...")
 
 	// Step 1: Make TCP listener
 	lis, err := net.Listen("tcp", "localhost:50051")
