@@ -8,7 +8,7 @@ import (
 
 type Service struct{}
 
-// This matches the proto in https://github.com/faraonc/hwsc-api-blocks/blob/master/int/hwsc-grpc-sample/proto/grpc-sample.proto
+// This matches the proto in https://github.com/faraonc/hwsc-api-blocks/blob/master/int/hwsc-grpc-sample-svc/proto/grpc-sample-svc.proto
 func (s Service) SayHello(ctx context.Context, in *pb.SampleServiceRequest) (*pb.SampleServiceResponse, error) {
 	return &pb.SampleServiceResponse{Message: "Hello " + in.Name}, nil
 }
