@@ -65,4 +65,4 @@ Sample HWSC service using gRPC in GoLang
 18. [OPTIONAL] Run ``$ dep ensure -v`` from the root folder of the project to populate dependencies in the vendor folder (run as you add external dependencies)
 19. [OPTIONAL] Run your generate protoc script or as needed, [example result](https://github.com/faraonc/hwsc-api-blocks/tree/master/int/hwsc-grpc-sample-svc/proto)
 20. Implement server's [entry point](https://github.com/faraonc/hwsc-grpc-sample-svc/blob/master/main.go)
-21. Implement [service](https://github.com/faraonc/hwsc-grpc-sample-svc/blob/master/server/server.go)
+21. Implement [service](https://github.com/faraonc/hwsc-grpc-sample-svc/blob/master/service/service.go)
