@@ -23,8 +23,8 @@ func main() {
 	// Step 2: Make gRPC server
 	s := grpc.NewServer()
 
-	// Step 3: Implement a server in a folder /server/server.go
-	// Step 4: Register gRPC server
+	// Step 3: Implement a service in a folder service/service.go
+	// Step 4: Register the service with gRPC server
 	pb.RegisterSampleServiceServer(s, svr.Service{})
 
 	// Step 5: Start gRPC server
