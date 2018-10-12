@@ -7,7 +7,7 @@ import (
 	"net"
 
 	pb "github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample-svc/proto"
-	svr "github.com/faraonc/hwsc-grpc-sample-svc/service"
+	svc "github.com/faraonc/hwsc-grpc-sample-svc/service"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 
 	// Step 3: Implement a service in a folder service/service.go
 	// Step 4: Register the service with gRPC server
-	pb.RegisterSampleServiceServer(s, svr.Service{})
+	pb.RegisterSampleServiceServer(s, svc.Service{})
 
 	// Step 5: Start gRPC server
 	if err := s.Serve(lis); err != nil {
