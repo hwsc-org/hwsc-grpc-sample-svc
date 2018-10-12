@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"google.golang.org/grpc"
 	"log"
 	"net"
-
-	"google.golang.org/grpc"
 
 	pb "github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample-svc/proto"
 	svr "github.com/faraonc/hwsc-grpc-sample-svc/service"
