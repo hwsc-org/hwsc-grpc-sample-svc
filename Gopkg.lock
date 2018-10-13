@@ -3,11 +3,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:c482d05ada84438051c6c619f5f30bf54af84d422cc40cd1e342f9109dd870e9"
+  digest = "1:c199eb99e49b6fcd4337081e79691b490104348cac930f31b17ec99e2a68a4eb"
   name = "github.com/faraonc/hwsc-api-blocks"
   packages = ["int/hwsc-grpc-sample-svc/proto"]
   pruneopts = "UT"
-  revision = "646f695c091e5d91c6d3694ee91a239cd524eb54"
+  revision = "9117f35c3595d54902a532554a00ad7fa30c1123"
 
 [[projects]]
   digest = "1:4c0989ca0bcd10799064318923b9bc2db6b4d6338dd75f3f2d86c3511aaaf5cf"
@@ -37,15 +37,15 @@
     "trace",
   ]
   pruneopts = "UT"
-  revision = "146acd28ed5894421fb5aac80ca93bc1b1f46f87"
+  revision = "49bb7cea24b1df9410e1712aa6433dae904ff66a"
 
 [[projects]]
   branch = "master"
-  digest = "1:c2789211d4035eb0843b85958ecf7cb4a5ea91c2d4decee652c94ce898e433cb"
+  digest = "1:0a40b0bdd57a93e741d8557465be3a2edeec408e9b6399586ad65bbe8e355796"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "4497e2df6f9e69048a54498c7affbbec3294ad47"
+  revision = "fa43e7bc11baaae89f3f902b2b4d832b68234844"
 
 [[projects]]
   digest = "1:a2ab62866c75542dd18d2b069fec854577a20211d7c0ea6ae746072a1dccdd18"
