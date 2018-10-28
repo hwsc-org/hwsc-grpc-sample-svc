@@ -53,8 +53,8 @@ Sample HWSC service using gRPC in GoLang
 11. Add constraint "google.golang.org/grpc" Gopkg.toml to point to a gRPC specific commit revision
       ```toml
       [[constraint]]
-      name = "google.golang.org/grpc"
-      revision ="8dea3dc473e90c8179e519d91302d0597c0ca1d1"
+  	name = "google.golang.org/grpc"
+  	version = "1.16.0"
       ```
   
 12. Download, extract [protocol buffers 3.6.1](https://github.com/protocolbuffers/protobuf/releases), and install (takes a while) [guide](https://medium.com/@erika_dike/installing-the-protobuf-compiler-on-a-mac-a0d397af46b8)
