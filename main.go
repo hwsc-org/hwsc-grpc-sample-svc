@@ -11,12 +11,12 @@ import (
 )
 
 func main() {
-	fmt.Println("hwsc-grpc-sample-svc is running...")
+	log.Println("[INFO] hwsc-grpc-sample-svc initiating...")
 
 	// Step 1: Make TCP listener
 	lis, err := net.Listen("tcp", "localhost:50051")
 	if err != nil {
-		log.Fatalf("Failed to TCP listener %v", err)
+		log.Fatalf("[FATAL] Failed to initialize TCP listener %v\n", err)
 	}
 
 	// Step 2: Make gRPC server
@@ -25,6 +25,7 @@ func main() {
 	// Step 3: Implement a service in a folder service/service.go
 	// Step 4: Register the service with gRPC server
 	pb.RegisterSampleServiceServer(s, svc.Service{})
+	log.Println("[INFO] hwsc-grpc-sample-svc at localhost:50051...")
 
 	// Step 5: Start gRPC server
 	if err := s.Serve(lis); err != nil {
