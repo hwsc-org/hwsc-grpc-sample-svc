@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"google.golang.org/grpc"
 	"log"
 	"net"
 
 	pb "github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample-svc/proto"
+	"github.com/faraonc/hwsc-grpc-sample-svc/conf"
 	svc "github.com/faraonc/hwsc-grpc-sample-svc/service"
 )
 
@@ -14,7 +14,7 @@ func main() {
 	log.Println("[INFO] hwsc-grpc-sample-svc initiating...")
 
 	// Step 1: Make TCP listener
-	lis, err := net.Listen("tcp", "localhost:50051")
+	lis, err := net.Listen(conf.GRPCHost.Network, conf.GRPCHost.String())
 	if err != nil {
 		log.Fatalf("[FATAL] Failed to initialize TCP listener %v\n", err)
 	}
