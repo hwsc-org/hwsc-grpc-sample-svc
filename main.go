@@ -25,7 +25,7 @@ func main() {
 	// Step 3: Implement a service in a folder service/service.go
 	// Step 4: Register the service with gRPC server
 	pb.RegisterSampleServiceServer(s, svc.Service{})
-	log.Println("[INFO] hwsc-grpc-sample-svc at localhost:50051...")
+	log.Printf("[INFO] hwsc-document-svc at %s...\n", conf.GRPCHost.String())
 
 	// Step 5: Start gRPC server
 	if err := s.Serve(lis); err != nil {
