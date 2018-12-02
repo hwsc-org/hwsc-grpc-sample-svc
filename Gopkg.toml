@@ -34,4 +34,4 @@
   version = "1.16.0"
 [[constraint]]
   branch = "master"
-  name = "github.com/faraonc/hwsc-api-blocks"
+  name = "github.com/hwsc-org/hwsc-api-blocks"

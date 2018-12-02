@@ -20,7 +20,7 @@
 [[projects]]
   branch = "master"
   digest = "1:c199eb99e49b6fcd4337081e79691b490104348cac930f31b17ec99e2a68a4eb"
-  name = "github.com/faraonc/hwsc-api-blocks"
+  name = "github.com/hwsc-org/hwsc-api-blocks"
   packages = ["int/hwsc-grpc-sample-svc/proto"]
   pruneopts = "UT"
   revision = "9e304e92c79c1740e58f64515abf6ddcf42f354e"
@@ -206,7 +206,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/faraonc/hwsc-api-blocks/int/hwsc-grpc-sample-svc/proto",
+    "github.com/hwsc-org/hwsc-api-blocks/int/hwsc-grpc-sample-svc/proto",
     "github.com/micro/go-config",
     "github.com/micro/go-config/source/env",
     "github.com/micro/go-config/source/file",
